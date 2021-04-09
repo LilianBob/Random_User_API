@@ -10,9 +10,10 @@ $(document).ready(function(){
             </tr>`)
             var user;
             $.each(res.results, function(i, value){
-                user = '<tr>' + '<td>' + value.name.first + + value.name.last + 
+                user = '<tr>' + '<td>' + value.name.first + "  " + value.name.last +  
                 '</td>'+ '<td>' + value.dob.age + '</td>' + '<td>' + value.email + 
-                '</td>'+ '<td>' + value.location + '</td>' + '</tr>'
+                '</td>'+ '<td>' + value.location.street.number + "  " + value.location.street.name+ 
+                " , " + value.location.city+ "  " + value.location.postcode+'</td>' + '</tr>'
                 $(user).appendTo('.randomUsers tbody');
             });
             
