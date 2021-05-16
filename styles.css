@@ -18,9 +18,9 @@
 .randomUsers{
     background-color: bisque;
     width: 100%;
-    border-collapse:separate;
-    border-spacing: 1em;
+    border-collapse: collapse;
+    border-spacing: 2em;
 }
-.padding{
-    padding: 10px;;
+.randomUsers .padding> th, td{
+    padding: 10px;
 }

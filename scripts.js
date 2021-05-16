@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('.btn').on('click', function(){
+    $('.btn').click(function(){
+        $('.randomUsers').find("tr", "td").empty();
         $.get("https://randomuser.me/api/?results=20", function(res){
             $('.randomUsers thead').html(`
             <tr class="padding">
