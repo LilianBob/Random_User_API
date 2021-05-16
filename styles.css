@@ -10,11 +10,17 @@
 .container{
     padding:20px;
 }
-.btn{
+.button{
+    display: flex;
+    justify-content: center;
     margin: 20px;
 }
 .randomUsers{
     background-color: bisque;
     width: 100%;
-    border-collapse: collapse;
+    border-collapse:separate;
+    border-spacing: 1em;
+}
+.padding{
+    padding: 10px;;
 }
